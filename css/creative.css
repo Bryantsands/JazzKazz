@@ -200,10 +200,7 @@ header .header-content .header-content-inner p {
 }
 @media (min-width: 768px) {
   header {
-    min-height: 100%;
-    background-size: 100% 100%;
-    position: relative;
-  width: 100%;
+  position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -463,3 +460,4 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
