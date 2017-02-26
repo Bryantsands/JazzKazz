@@ -41,6 +41,8 @@ p {
 }
 .bg-primary {
   background-color: #F05F40;
+  background-size: 100% 100%;
+  background-repeat:no-repeat; 
 }
 .bg-dark {
   background-color: #222222;
@@ -112,7 +114,7 @@ header {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/newsig.jpg');
-  background-size: 100%;
+  background-size: 100% 50%;
   background-repeat:no-repeat; 
   text-align: center;
   color: #F05F40;
@@ -162,15 +164,13 @@ header {
 }
 header {
   position: relative;
-  width: 100%;
-  min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/newsig.jpg');
-  background-size: 100%;
+  background-size: 100% 50%;
   background-repeat:no-repeat; 
   text-align: center;
   color: #F05F40;
@@ -207,11 +207,12 @@ header .header-content .header-content-inner p {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/newsig.jpg');
+  background-size: 100% 50%;
   background-repeat:no-repeat; 
   text-align: center;
   color: #F05F40;
   background-attachment: fixed;
-  }
+}
   header .header-content {
     position: absolute;
     top: 50%;
@@ -220,11 +221,12 @@ header .header-content .header-content-inner p {
     transform: translateY(-50%);
     padding: 0 50px;
   }
-  header .header-content .header-content-inner {
-    max-width: 1000px;
+  /*header .header-content .header-content-inner {
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-  }
+  }*/
   header .header-content .header-content-inner h1 {
     font-size: 50px;
   }
@@ -301,9 +303,8 @@ header .header-content .header-content-inner p {
 }
 @media (min-width: 768px) {
   header {
-    min-height: 100%;
-    background-size: 100% 100%;
-    position: relative;
+  height: 80%;
+  position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -316,12 +317,38 @@ header .header-content .header-content-inner p {
   color: #F05F40;
   background-attachment: fixed;
   }
+  header {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/newsig.jpg');
+  background-size: 100% 50%;
+  background-repeat:no-repeat; 
+  text-align: center;
+  color: #F05F40;
+  background-attachment: fixed;
+}
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) and (orientation: portrait){
+  header {
+  position: relative;
+  background-position: center;
+  background-image: url('../img/newsig.jpg');
+  background-size: 100% 60%;
+  background-repeat:no-repeat; 
+  text-align: center;
+  background-attachment: fixed;
+}
 }
 .call-to-action h2 {
   margin: 0 auto 20px;
@@ -460,4 +487,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+
 
